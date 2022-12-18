@@ -1,32 +1,24 @@
 version: 2
-enable-beta-ecosystems: true
 updates:
-  - package-ecosystem: "beta-ecosystem"
-    directory: "/"
-    schedule:
-      interval: "daily"
   # shields.io dependencies
   - package-ecosystem: npm
     directory: '/'
     schedule:
       interval: daily
-    open-pull-requests-limit: 99
 
   # badge-maker package dependencies
   - package-ecosystem: npm
     directory: '/badge-maker'
     schedule:
       interval: daily
-    open-pull-requests-limit: 99
-
+      
   # close-bot package dependencies
   - package-ecosystem: npm
     directory: '/.github/actions/close-bot'
     schedule:
       interval: daily
-    open-pull-requests-limit: 99
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
       interval: daily
-    open-pull-requests-limit: 99
+      
